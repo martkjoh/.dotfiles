@@ -8,13 +8,13 @@ else
     export hostname='unknown'
 fi
 
-echo $hostname
 
+# Activates xmodmap optins
+xmodmap ~/.dotfiles/.Xmodmap
 
 # Common commands
 
 alias py=python3
-alias xm="xmodmap ~/.dotfiles/.Xmodmap"
 
 set completion-ignore-case on
 set show-all-if-ambiguous on
@@ -26,7 +26,6 @@ alias ..="cd .."
 
 # Only for desktop at mpg ds, named tochal
 mpg='tochal'
-echo $mpg
 if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
     alias mathematica=/usr/ds/mathematica/Executables/Mathematica 
