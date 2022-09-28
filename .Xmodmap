@@ -1,0 +1,17 @@
+!Reset
+!setxkbmap -option
+
+keycode  66 = Mode_switch
+
+keysym i = i I Up Up
+keysym j = j J Left Left
+keysym l = l L Right Right
+keysym k = k K Down Down
+keysym u = u U Home Home
+keysym o = o O End End
+keysym n = n N Next Next
+keysym h = h H Prior Prior
+
+
+!keycode 45 = a b c d e f g h i j k l m o p q r s t u v w x y z
+    
