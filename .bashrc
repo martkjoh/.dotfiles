@@ -20,7 +20,7 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 
 alias l="ls -la"       # List in long format, include dotfiles
-alias ld="ls -ld */"   # List in long format, only directories
+alias ld="ls -lad */"  # List in long format, only directories
 alias ..="cd .."
 
 
