@@ -31,4 +31,8 @@ if [ $hostname == $mpg ]; then
     alias mathematica=/usr/ds/mathematica/Executables/Mathematica 
 fi
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 
