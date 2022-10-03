@@ -31,7 +31,14 @@ if [ $hostname == $mpg ]; then
     alias mathematica=/usr/ds/mathematica/Executables/Mathematica 
 fi
 
+# Settings for hp envy
+envy='envy'
+if [ $hostname == $envy ]; then
+    . ~/.dotfiles/.bash_envy
+fi
+
+
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
