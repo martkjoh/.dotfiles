@@ -1,15 +1,16 @@
-# Touch cursorsettings
-
-# activate touchcursor
-~/.touchcursor.sh
-
 # Set keybaord
 alias lkeyboar='xinput list'
-alias conftouch='vim ~/.config/touchcursor/touchcursor.conf'
 
 # Update bash
 alias load='source ~/.bashrc'
 
 # Nice git graph
 alias glog='git log --all --oneline --graph'
+
+# Common commands
+
+alias py=python3
+alias l="ls -la"       # List in long format, include dotfiles
+alias ld="ls -lad */"  # List in long format, only directories
+alias ..="cd .."
 

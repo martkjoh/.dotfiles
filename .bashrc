@@ -12,16 +12,9 @@ fi
 # Activates xmodmap optins
 xmodmap ~/.dotfiles/.Xmodmap
 
-# Common commands
-
-alias py=python3
 
 set completion-ignore-case on
 set show-all-if-ambiguous on
-
-alias l="ls -la"       # List in long format, include dotfiles
-alias ld="ls -lad */"  # List in long format, only directories
-alias ..="cd .."
 
 
 # Only for desktop at mpg ds, named tochal
@@ -34,12 +27,8 @@ fi
 # Settings for hp envy
 # envy='envy'
 # if [ $hostname == $envy ]; then
-    
-# fi
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+. ~/.dotfiles/.bash_aliases
 
 
 # bashrc from envy, standard for Ubuntu 22
