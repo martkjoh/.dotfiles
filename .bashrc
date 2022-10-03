@@ -32,13 +32,15 @@ if [ $hostname == $mpg ]; then
 fi
 
 # Settings for hp envy
-envy='envy'
-if [ $hostname == $envy ]; then
-    . ~/.dotfiles/.bash_envy
-fi
-
-
+# envy='envy'
+# if [ $hostname == $envy ]; then
+    
+# fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+
+# bashrc from envy, standard for Ubuntu 22
+. ~/.dotfiles/.bash_envy
