@@ -2,4 +2,4 @@
 	email = martin.johnsrud@ds.mpg.de
 	name = Martin Johnsrud
 [credential]
-	helper = cache
+	helper = store

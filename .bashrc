@@ -22,7 +22,8 @@ set show-all-if-ambiguous on
 mpg='tochal'
 if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
-    alias mathematica=/usr/ds/mathematica/Executables/Mathematica 
+    alias mathematica='/usr/ds/bin/mathematica & disown'
+    alias zotero6='/usr/ds/bin/zotero & disown'
 fi
 
 # Settings for hp envy
