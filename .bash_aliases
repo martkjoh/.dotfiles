@@ -16,5 +16,5 @@ alias ld="ls -lad */"  # List in long format, only directories
 alias ..="cd .."
 
 # Mount google drive disk to the desktop
-alias mnt='rclone mount drive:/barsoe ~/Desktop/ --daemon'
+alias mnt='rclone mount drive:/barsoe ~/Desktop/ --vfs-cache-mode full --daemon'
 alias umnt='fusermount -uz ~/Desktop'
