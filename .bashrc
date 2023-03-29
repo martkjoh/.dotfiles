@@ -9,7 +9,6 @@ else
 fi
 
 
-
 # Activates xmodmap optins
 xmodmap ~/.dotfiles/.Xmodmap
 
