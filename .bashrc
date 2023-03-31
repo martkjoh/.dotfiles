@@ -10,7 +10,12 @@ fi
 
 
 # Activates xmodmap optins
-xmodmap ~/.dotfiles/.Xmodmap
+# can be used instead of touchcursor if sudo not available
+# xmodmap ~/.dotfiles/.Xmodmap
+
+# activates touchcursor
+# install from https://github.com/donniebreve/touchcursor-linux
+systemctl --user restart touchcursor.service
 
 
 set completion-ignore-case on
