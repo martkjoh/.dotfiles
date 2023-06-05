@@ -15,7 +15,7 @@ fi
 
 # activates touchcursor
 # install from https://github.com/donniebreve/touchcursor-linux
-systemctl --user restart touchcursor.service
+# systemctl --user restart touchcursor.service
 
 
 set completion-ignore-case on
@@ -28,6 +28,7 @@ if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
     alias mathematica='/usr/ds/bin/mathematica & disown'
     alias zotero6='/usr/ds/bin/zotero & disown'
+    alias julia='/usr/ds/bin/julia'
 fi
 
 # Settings for hp envy
@@ -39,3 +40,5 @@ fi
 
 # bashrc from envy, standard for Ubuntu 22
 . ~/.dotfiles/.bash_envy
+
+bind '"\t":menu-complete'

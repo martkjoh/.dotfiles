@@ -16,3 +16,4 @@ alias ld="ls -lad */"  # List in long format, only directories
 alias ..="cd .."
 
 alias lmp='ssh 10.219.100.51'
+lmpcp() { scp mjohnsrud@10.219.100.51:~/"$1" "$2"; }
