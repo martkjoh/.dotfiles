@@ -22,8 +22,8 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 
 
-# Only for desktop at mpg ds, named tochal
-mpg='tochal'
+# Only for desktop at mpg ds, named dalankuh
+mpg='dalankuh'
 if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
     alias mathematica='/usr/ds/bin/mathematica & disown'
@@ -31,9 +31,14 @@ if [ $hostname == $mpg ]; then
     alias julia='/usr/ds/bin/julia'
 fi
 
-# Settings for hp envy
-# envy='envy'
-# if [ $hostname == $envy ]; then
+
+if [ ${hostname:0:6} == 'sohrab' ]; then
+    source /core/uge/LMP/common/settings.sh
+    alias julia='/usr/ds/bin/julia'
+    alias lscr='l /scratch04.local/mjohnsrud/'
+    alias cscr='cd /scratch04.local/mjohnsrud/'
+fi
+
 
 . ~/.dotfiles/.bash_aliases
 
@@ -42,3 +47,4 @@ fi
 . ~/.dotfiles/.bash_envy
 
 bind '"\t":menu-complete'
+
