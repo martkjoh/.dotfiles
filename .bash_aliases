@@ -18,3 +18,4 @@ alias ..="cd .."
 alias lmp='ssh 10.219.100.51'
 lmpcp() { scp mjohnsrud@10.219.100.51:~/"$1" "$2"; }
 
+syncdata() { rsync -avP $2 ~/data/"$1"/ desktop:/data.lmp/mjohnsrud/$1; }
