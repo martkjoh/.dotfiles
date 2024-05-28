@@ -47,7 +47,7 @@ fi
 # bashrc from envy, standard for Ubuntu 22
 . ~/.dotfiles/.bash_envy
 
-bind '"\t":menu-complete'
+# bind '"\t":menu-complete'
 
 
 # >>> conda initialize >>>
