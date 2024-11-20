@@ -43,25 +43,10 @@ fi
 
 . ~/.dotfiles/.bash_aliases
 
-
 # bashrc from envy, standard for Ubuntu 22
 . ~/.dotfiles/.bash_envy
 
-# bind '"\t":menu-complete'
+bind '"\t":menu-complete'
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mjohnsrud/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/mjohnsrud/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mjohnsrud/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/mjohnsrud/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+alias venv="source $HOME/.venv/bin/activate"
+venv
