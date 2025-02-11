@@ -25,3 +25,5 @@ scrsync() { rsync -avP sohrab:/scratch04.local/mjohnsrud/"$1" $2;}
 # a: archive, v: verbose, P: partial (only synch whats needed)
 # argument $2 allows for --dry-run flag
 syncdata() { rsync -avP $2 ~/data/"$1"/ desktop:/data.lmp/mjohnsrud/$1; }
+ 
+topng() { mkdir main_png && convert -density 304.7 -units PixelsPerCentimeter main.pdf main_png/page.png; }
