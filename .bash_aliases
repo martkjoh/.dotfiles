@@ -25,5 +25,8 @@ scrsync() { rsync -avP sohrab:/scratch04.local/mjohnsrud/"$1" $2;}
 # a: archive, v: verbose, P: partial (only synch whats needed)
 # argument $2 allows for --dry-run flag
 syncdata() { rsync -avP $2 ~/data/"$1"/ desktop:/data.lmp/mjohnsrud/$1; }
- 
+
+# Convert presentation into pngs 
 topng() { mkdir -p main_png && convert -density 304.8 -units PixelsPerCentimeter main.pdf main_png/page.png; }
+# convert vid.webm into mp4
+vconv() { ffmpeg -i $1.webm -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $1.mp4; }
