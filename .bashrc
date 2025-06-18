@@ -27,7 +27,7 @@ if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
     alias mathematica='/usr/ds/bin/mathematica & disown'
     alias zotero6='/usr/ds/bin/zotero & disown'
-    alias julia='/usr/ds/bin/julia' 
+    alias julia='/usr/ds/bin/julia'
     alias cdata='cd /data.lmp/mjohnsrud/'
 fi
 
