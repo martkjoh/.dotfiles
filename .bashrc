@@ -25,10 +25,10 @@ set show-all-if-ambiguous on
 mpg='dalankuh'
 if [ $hostname == $mpg ]; then
     PATH=$PATH:/usr/ds/
-    alias mathematica='/usr/ds/bin/mathematica & disown'
+    alias mathematica='/usr/ds/wolfram-14.3/Executables/WolframNB'
     alias zotero6='/usr/ds/bin/zotero & disown'
-    alias julia='/usr/ds/bin/julia'
-    alias cdata='cd /data.lmp/mjohnsrud/'
+    alias julia='/usr/ds/bin/julia' 
+    alias cdata='cd /data/lmp/mjohnsrud/'
 fi
 
 
@@ -41,6 +41,13 @@ if [ ${hostname:0:6} == 'sohrab' ]; then
 fi
 
 
+if [ ${hostname:0:7} == 'nariman' ]; then
+    alias julia='/usr/ds/bin/julia'
+    alias lscr='l /scratch.local/mjohnsrud/'
+    alias cscr='cd /scratch.local/mjohnsrud/'
+    alias cdata='cd /data/lmp/mjohnsrud/'
+fi
+
 . ~/.dotfiles/.bash_aliases
 
 # bashrc from envy, standard for Ubuntu 22
@@ -48,6 +55,21 @@ fi
 
 bind '"\t":menu-complete'
 
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/lmp/mjohnsrud/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/lmp/mjohnsrud/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
 alias venv="source $HOME/.venv/bin/activate"
 venv
 
