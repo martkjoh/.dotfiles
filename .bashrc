@@ -50,3 +50,18 @@ bind '"\t":menu-complete'
 
 alias venv="source $HOME/.venv/bin/activate"
 venv
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/mjohnsrud/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/mjohnsrud/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
