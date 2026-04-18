@@ -31,3 +31,6 @@ datasync() { cd ~/data && rsync -avPR $1 desktop:/data/lmp/mjohnsrud/; }
 topng() { mkdir -p main_png && convert -density 304.8 -units PixelsPerCentimeter main.pdf main_png/page.png; }
 # convert vid.webm into mp4
 vconv() { ffmpeg -i $1.webm -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $1.mp4; }
+# Rasterize pdf. To open in powerpoint:
+# open in libre offcice draw, paste into impress (make sure slides have sime size), then save as pptx
+rasterize() { gs -dNOPAUSE -dBATCH -sDEVICE=pdfimage24 -r1200 -dDownScaleFactor=2 -o rasterized.pdf "$1"; }
